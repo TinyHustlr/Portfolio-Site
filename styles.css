@@ -66,19 +66,23 @@ ul {
 
 .happy-btn:hover {
     zoom: 200%
+
 }
 
 .modal {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: none;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
+    padding: 20px;
     border: 0;
     background-color: pink;
-    position: fixed;
-    top: 25%;
-    left: 50%;
     border-radius: 20px;
+    margin: auto;
 }
 
 .img {
@@ -87,7 +91,7 @@ ul {
 }
 
 .wombat-gif {
-    position: absolute;
+    position: relative;
     width: 100%;
     border-radius: 20px;
 }

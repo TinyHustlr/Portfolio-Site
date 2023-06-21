@@ -1,0 +1,114 @@
+body {
+    background-color: black;
+    text-align: center;
+    background-image: url("images/supermariobgd.jpg");
+}
+
+@font-face {
+    font-family: supermario;
+    src: url("fonts/SuperMario256.ttf");
+}
+
+.supermario {
+    font-family: supermario;
+    color: yellow;
+    text-shadow: 2px 2px red;
+}
+
+h1 {
+    margin-top: 200px;
+    font-size: 100px;
+}
+
+.btn {
+    color: red;
+    text-shadow: 0px 0px 4px white;
+    border-radius: 250px;
+    margin: 10px 10px;
+    padding: 20px 40px;
+    border: none;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: bisque;
+    animation-name: button;
+    animation-duration: 4s;
+}
+
+.btn:hover {
+    background-image: url("images/MarioNES.gif");
+    background-size: cover;
+}
+
+#rtx {
+    position: relative;
+    color: white;
+    font-family: supermario;
+    font-size: 20px;
+    text-shadow: 0px 0px 2px black;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin: 20px auto 10px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: greenyellow;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px greenyellow;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+html { filter: url("#pixelate") }
+svg { display: block }
