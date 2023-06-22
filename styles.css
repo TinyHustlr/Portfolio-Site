@@ -20,6 +20,8 @@ img {
     position: relative;
     color: black;
     font-size: 20px;
+    text-align: right;
+    padding-right: 20px;
 }
 
 .switch {
@@ -69,11 +71,6 @@ img {
   input:focus + .slider {
     box-shadow: 0 0 1px greenyellow;
   }
-
-  /* Attempting to add blur effect to page - not working */
-  input:focus + .slider + .blur-effect{
-    filter: blur(2px);
-  }
   
   input:checked + .slider:before {
     -webkit-transform: translateX(26px);
@@ -90,6 +87,15 @@ img {
     border-radius: 50%;
   }
 
+.blureffect {
+  transition: filter 0.5s ease-in-out;
+  filter: blur(2px);
+}
+
+.blureffect-off {
+  transition: filter 0.5s ease-in-out;
+  filter: blur(0px);
+}
 
 
 /* html { filter: url("#pixelate") }
