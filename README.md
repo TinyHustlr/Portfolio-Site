@@ -1,2 +1,1 @@
-# Portfolio Site
- A home for some interesting projects and things about me.
+Nothing to see here so far.
