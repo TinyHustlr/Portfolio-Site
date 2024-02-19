@@ -11,6 +11,10 @@ body {
     grid-gap: 1em;
 }
 
+footer {
+  text-align: center;
+}
+
 img {
     width: 100%;
 }

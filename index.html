@@ -49,7 +49,24 @@
             <img src="./images/colourwheel.png" alt="colour wheel">
         </div>
     </main>
+    <footer>
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="61d38a4b-321e-41fc-b358-c5c93ed14fc7
+            ">
+        
+            <input type="text" name="name" required>
+            <input type="email" name="email" required>
+            <textarea name="message" required></textarea>
+            <div class="h-captcha" data-captcha="true"></div>
+            <button type="submit">Submit Form</button>
+        
+        </form>
+        
+        
+    </footer>
 </div>
     <script src="/index.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 </html>
