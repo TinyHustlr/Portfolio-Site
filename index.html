@@ -5,9 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@700&display=swap" rel="stylesheet">
     <title>Portfolio Site</title>
 </head>
 <body>
@@ -19,53 +16,57 @@
         </label>
         <div class="rtx-text">RTX</div>
     </div>
-
 <div id="blur">
 
-    <!-- Portfolio projects -->
-    <main class="portfolio">
-        <div class="project-one project">
-            <h2 class="project-heading">Project</h2>
-            <img src="./images/colourwheel.png" alt="colour wheel">
-        </div>
-        <div class="project-two project">
-            <h2 class="project-heading">Project</h2>
-            <img src="./images/colourwheel.png" alt="colour wheel">
-        </div>     
-        <div class="project-three project">
-            <h2 class="project-heading">Project</h2>
-            <img src="./images/colourwheel.png" alt="colour wheel">
-        </div>
-        <div class="project-four project">
-            <h2 class="project-heading">Project</h2>
-            <img src="./images/colourwheel.png" alt="colour wheel">
-        </div>
-        <div class="project-five project">
-            <h2 class="project-heading">Project</h2>
-            <img src="./images/colourwheel.png" alt="colour wheel">
-        </div>     
-        <div class="project-six project">
-            <h2  class="project-heading">Project</h2>
-            <img src="./images/colourwheel.png" alt="colour wheel">
-        </div>
-    </main>
-    <footer>
-        <form action="https://api.web3forms.com/submit" method="POST">
-
-            <input type="hidden" name="access_key" value="61d38a4b-321e-41fc-b358-c5c93ed14fc7
-            ">
-        
-            <input type="text" name="name" required>
-            <input type="email" name="email" required>
-            <textarea name="message" required></textarea>
-            <div class="h-captcha" data-captcha="true"></div>
-            <button type="submit">Submit Form</button>
-        
-        </form>
-        
-        
-    </footer>
+<!-- Portfolio projects -->
+<header>
+    <nav>Nav bar</nav>
+</header>
+<main class="portfolio">
+    <div class="project-one project">
+        <h2 class="project-heading">Project one</h2>
+        <img src="./images/colourwheel.png" alt="colour wheel">
+    </div>
+    <div class="project-two project">
+        <h2 class="project-heading">Project two</h2>
+        <img src="./images/colourwheel.png" alt="colour wheel">
+    </div>     
+    <div class="project-three project">
+        <h2 class="project-heading">Project three</h2>
+        <img src="./images/colourwheel.png" alt="colour wheel">
+    </div>
+    <div class="project-four project">
+        <h2 class="project-heading">Project four</h2>
+        <img src="./images/colourwheel.png" alt="colour wheel">
+    </div>
+    <div class="project-five project">
+        <h2 class="project-heading">Project five</h2>
+        <img src="./images/colourwheel.png" alt="colour wheel">
+    </div>     
+    <div class="project-six project">
+        <h2  class="project-heading">Project six</h2>
+        <img src="./images/colourwheel.png" alt="colour wheel">
+    </div>
+</main>
 </div>
+<footer>
+    <!-- Contact for via web3forms -->
+    <div class="contact-container">
+    
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <h1>Contact me</h1>
+        <input type="hidden" name="access_key" value="61d38a4b-321e-41fc-b358-c5c93ed14fc7">
+        <label for="name" aria-label="Name">Name</label>
+        <input class="contact-form" type="text" name="name" placeholder="First name">
+        <label for="email" aria-label="Name">Email</label>
+        <input class="contact-form" type="email" name="email" placeholder="Email address">
+        <label for="message" aria-label="Message">Message</label>
+        <textarea class="contact-form" name="message" placeholder="Write your message here" rows="10" required></textarea>
+        <div class="h-captcha" data-captcha="true"></div>
+        <button type="submit">Submit Form</button>
+    </form>
+    </div>
+</footer>
     <script src="/index.js"></script>
     <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
