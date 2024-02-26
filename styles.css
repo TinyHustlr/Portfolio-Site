@@ -19,6 +19,7 @@ form {
 
 .contact-form {
   width: 350px;
+  border-radius: 5px;
 }
 
 h1, h2 {
@@ -32,11 +33,12 @@ label, .h-captcha, button {
 button {
   border: 0;
   border-radius: 10px;
-  padding: 1em 1.5em;
-  background-color: blue;
+  padding: 0.5em 1em;
+  background-color: rgb(222, 141, 199);
   color: white;
   font-size: 1em;
   font-weight: 700;
+  margin-bottom: 1em;
 }
 button:hover {
   cursor: pointer;
