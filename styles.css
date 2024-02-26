@@ -4,11 +4,11 @@ body {
 }
 
 .portfolio {
-    padding: 1em;
+    padding: 0.5em;
     display: grid;
     /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 1em;
+    grid-gap: 0.5em;
 }
 
 form {
@@ -21,8 +21,8 @@ form {
   width: 350px;
 }
 
-h1 {
-  margin: 0;
+h1, h2 {
+  margin: 0.2em 0;
 }
 
 label, .h-captcha, button {
@@ -42,8 +42,6 @@ button:hover {
   cursor: pointer;
   background-color: rgb(81, 81, 219);
 }
-
-
 
 button:hover {
   cursor: pointer;
