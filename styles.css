@@ -130,14 +130,14 @@ img {
     border-radius: 50%;
   }
 
-.blureffect {
-  transition: filter 0.5s ease-in-out;
-  filter: blur(100px);
+.pixelated-effect {
+  image-rendering: pixelated;
 }
 
 .blureffect-off {
   transition: filter 0.5s ease-in-out;
-  filter: blur(0px);
+  filter: blur(20px);
+  
 }
 
 
