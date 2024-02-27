@@ -10,6 +10,7 @@ body {
     /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 0.5em;
+    
 }
 
 form {
@@ -52,9 +53,15 @@ button:hover {
   animation: ease-in 0.5s;
 }
 
+.project {
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 img {
     width: 100%;
-    cursor: pointer;
+    border-radius: 10px;
+    
 }
 
 
