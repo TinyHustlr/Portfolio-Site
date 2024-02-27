@@ -130,16 +130,10 @@ img {
     border-radius: 50%;
   }
 
-.pixelated-effect {
-  image-rendering: pixelated;
-}
-
 .blureffect-off {
   transition: filter 0.5s ease-in-out;
   filter: blur(20px);
-  
 }
-
 
 /* html { filter: url("#pixelate") }
 svg { display: block } */
