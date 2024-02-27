@@ -53,16 +53,8 @@ button:hover {
   animation: ease-in 0.5s;
 }
 
-.project {
-  border-radius: 10px;
-  cursor: pointer;
-}
-
 img {
     width: 100%;
-    border-radius: 10px;
-    
-}
 
 
 /* RTX Switch CSS */
