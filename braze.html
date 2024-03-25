@@ -1,13 +1,26 @@
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-<body>
-    <img src="./images/braze.png" >/
-</body>
-
-
-
-<div style="margin-top: 2rem; display: flex; align-items: center;">
-    <input type="checkbox" id="port" name="properties[Port]" value="yes">
-    <label for="port">Include port and childhood cancer badge</label>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Workbench&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./brazestyles.css" />
+    <title>Braze Campaign Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Brazenator</h1>
+      <h3>Be super more clever.</h3>
+      <button class="button" id="chaos-btn">Give me chaos</button>
+      <div id="canvas-entry">CANVAS ENTRY</div>
+      <div class="step" id="new-step"></div>
+      <button class="button" id="back-btn" onclick="window.location.href = 'index.html';">Back</button>
     </div>
+
+  </body>
+  <script src="./brazecanvas.js" type="module"></script>
+</html>
