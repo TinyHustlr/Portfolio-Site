@@ -12,13 +12,6 @@ body {
     
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-  align-items: center;
-}
-
 form {
   display: flex;
   flex-direction: column;
