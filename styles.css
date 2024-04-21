@@ -5,7 +5,7 @@ body {
 }
 
 .portfolio {
-    padding: 2em 1em;
+    padding: 1em 2em;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 0.5em;
@@ -30,12 +30,6 @@ h1, h2 {
 
 label, .h-captcha, button {
   margin-top: 10px;
-}
-
-.h-captcha {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 button {
@@ -66,6 +60,7 @@ img {
 @media (min-width: 600px) {
 
     .portfolio {
+        padding: 2em 4rem;
         grid-template-columns: repeat(2, 1fr);
     }
 
