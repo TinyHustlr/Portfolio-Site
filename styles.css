@@ -25,8 +25,11 @@ body {
 }
 
 .pixelated-image {
+  display: flex;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
   top: 100px;
-  left: 179px;
   width: 280px;
   height: auto;
   position: absolute;
