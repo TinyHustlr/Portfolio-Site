@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    background-color: #FAF9F6;
+    background-color:rgb(10, 21, 13);
 }
 
 .portfolio {
@@ -55,6 +55,8 @@ button:hover {
 
 img {
     width: 100%;
+    filter: grayscale(100%) sepia(100%) hue-rotate(70deg) saturate(200%);
+    image-rendering: pixelated;
 }
 
 @media (min-width: 600px) {
