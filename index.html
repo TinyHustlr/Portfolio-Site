@@ -10,19 +10,21 @@
   <body>
     <header>
     </header>
-      <!-- Portfolio projects -->
-      <main class="portfolio">
-        <div class="project-one project">
-            <a href="https://brazecanvasgenerator.netlify.app/" target="_blank">
-            <img class="pixelated-image"  src="./images/braze_pixel.png" alt="Braze logo" />
-          </a>
-        </div>
-        <div class="project-two project">
+      <div id="gameboy-container">
+        <img class="gameboy-frame" src="./images/gameboy_frame_crop_2x.png" aria-label="Gameboy frame" alt="Gameboy frame" />
+        <img class="pixelated-image green-filter" src="./images/braze_pixel.png" alt="Braze logo" />
+        <!-- <img class="pixelated-image green-filter" src="./images/youtube_logo_pixel.png" alt="YouTube logo" />
+        <img class="pixelated-image green-filter" src="./images/zelda_pomodoro_pixel.png" alt="Princess Zelda pomodoro" />
+        <img class="pixelated-image green-filter" src="./images/linkedin_thoughts_pixel.png" alt="Linkedin thoughts" />
+        <img class="pixelated-image green-filter" src="./images/shopify_logo_pixel.png" alt="Shopify logo" />
+        <img class="pixelated-image green-filter" src="./images/lol_fitness_pixel.png" alt="League of fitness legends" /> -->
+
+        <!-- <div class="project-two project green-filter">
           <a href="https://www.youtube.com/@minimumviablepizza" target="_blank">
-          <img src="./images/youtube_logo_pixel.png" alt="YouTube logo" />
+          
           </a>
         </div>
-        <div class="project-three project">
+        <div class="project-three project green-filter">
           <a href="https://zeldapomodoro.netlify.app/" target="_blank">
           <img
             src="./images/zelda_pomodoro_pixel.png" 
@@ -30,61 +32,25 @@
           />
           </a>
         </div>
-        <div class="project-four project">
+        <div class="project-four project green-filter">
           <a href="https://www.linkedin.com/in/davidworeilly/" target="_blank">
           <img src="./images/linkedin_thoughts_pixel.png" alt="Linkedin thoughts" />
           </a>
         </div>
-        <div class="project-five project">
+        <div class="project-five project green-filter">
           <a href="https://mybuddyboo.com.au/" target="_blank">
           <img src="./images/shopify_logo_pixel.png" alt="Shopify logo" />
           </a>
         </div>
-        <div class="project-six project">
+        <div class="project-six project green-filter">
           <a href="https://lolfitness.netlify.app/" target="_blank">
           <img src="./images/lol_fitness_pixel.png" alt="League of fitness legends" />
           </a>
-        </div>
+        </div> -->
+      </div>
 
       </main>
-    <!-- </div> -->
-    <footer>
-      <!-- Contact for via web3forms -->
-      <div class="contact-container">
-        <form action="https://api.web3forms.com/submit" method="POST">
-          <h1>Contact me</h1>
-          <input
-            type="hidden"
-            name="access_key"
-            value="61d38a4b-321e-41fc-b358-c5c93ed14fc7"
-          />
-          <label for="name" aria-label="Name">Name</label>
-          <input
-            class="contact-form"
-            type="text"
-            name="name"
-            placeholder="First name"
-          />
-          <label for="email" aria-label="Name">Email</label>
-          <input
-            class="contact-form"
-            type="email"
-            name="email"
-            placeholder="Email address"
-          />
-          <label for="message" aria-label="Message">Message</label>
-          <textarea
-            class="contact-form"
-            name="message"
-            placeholder="Write your message here"
-            rows="10"
-            required
-          ></textarea>
-          <div class="h-captcha" data-captcha="true"></div>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-    </footer>
-    <script src="https://web3forms.com/client/script.js" async defer></script>
+      <footer>
+      </footer>
   </body>
 </html>

@@ -4,66 +4,31 @@ body {
     background-color:rgb(17, 39, 23);
 }
 
-.portfolio {
-    padding: 1em 2em;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 0.5em;
-}
-
-form {
+#gameboy-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.contact-container {
-  display: flex;
   justify-content: center;
-  align-items: center;
-  border-radius: 5px;
+  position: relative;
 }
 
-h1, h2 {
-  margin: 0.2em 0;
+.gameboy-frame {
+  width: auto;
+  height: 100vh;
+  position: relative;
+  z-index: 2;
 }
 
-label, .h-captcha, button {
-  margin-top: 10px;
+.green-filter {
+  filter: grayscale(100%) sepia(100%) hue-rotate(70deg) saturate(125%);
+  image-rendering: pixelated;
 }
 
-button {
-  border: 0;
-  border-radius: 10px;
-  padding: 0.5em 1em;
-  background-color: rgb(222, 141, 199);
-  color: white;
-  font-size: 1em;
-  font-weight: 700;
-  margin-bottom: 1em;
-}
-button:hover {
-  cursor: pointer;
-  background-color: rgb(81, 81, 219);
-}
-
-button:hover {
-  cursor: pointer;
-  background-color: rgb(81, 81, 219);
-  animation: ease-in 0.5s;
-}
-
-img {
-    width: 100%;
-    filter: grayscale(100%) sepia(100%) hue-rotate(70deg) saturate(200%);
-    image-rendering: pixelated;
-}
-
-@media (min-width: 600px) {
-
-    .portfolio {
-        padding: 2em 4rem;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
+.pixelated-image {
+  top: 100px;
+  left: 179px;
+  width: 280px;
+  height: auto;
+  position: absolute;
+  z-index: 1;
 }
