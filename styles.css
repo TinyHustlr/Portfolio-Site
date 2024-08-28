@@ -26,12 +26,36 @@ body {
 
 .pixelated-image {
   display: flex;
-  /* flex-direction: column; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  top: 100px;
+  margin-left: 10px;
+  margin-bottom: 330px;
   width: 280px;
   height: auto;
   position: absolute;
   z-index: 1;
 }
+
+/* TO TRY
+<style>
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    height: 100vh; 
+}
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+}
+.image1, .image2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+.image2 {
+    z-index: 1; 
+}
+</style> */
