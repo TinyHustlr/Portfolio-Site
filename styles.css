@@ -12,19 +12,17 @@ body {
   justify-content: left;
 }
 
-img {
+.project-image {
   transition: transform .2s;
   border-radius: 10px;
   margin: 10px;
 }
 
-img:hover {
+.project-image:hover {
   transform: scale(1.05);
 }
 
-
 .project:hover {
   cursor: pointer;
-  
 }
 
