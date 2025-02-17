@@ -1,61 +1,30 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    background-color:rgb(17, 39, 23);
+    background-color: rgb(224, 224, 224);
 }
 
-#gameboy-container {
+.portfolio-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  position: relative;
+  justify-content: left;
 }
 
-.gameboy-frame {
-  width: auto;
-  height: 100vh;
-  position: relative;
-  z-index: 2;
+img {
+  transition: transform .2s;
+  border-radius: 10px;
+  margin: 10px;
 }
 
-.green-filter {
-  filter: grayscale(100%) sepia(100%) hue-rotate(70deg) saturate(125%);
-  image-rendering: pixelated;
+img:hover {
+  transform: scale(1.05);
 }
 
-.pixelated-image {
-  display: flex;
-  margin-left: 10px;
-  margin-bottom: 330px;
-  width: 280px;
-  height: auto;
-  position: absolute;
-  z-index: 1;
+
+.project:hover {
+  cursor: pointer;
+  
 }
 
-/* TO TRY
-<style>
-.flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    width: 100%;
-    height: 100vh; 
-}
-.container {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-}
-.image1, .image2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-}
-.image2 {
-    z-index: 1; 
-}
-</style> */
