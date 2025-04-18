@@ -1,53 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles.css" />
-    <title>Portfolio Site</title>
-  </head>
-  <body>
-    <header>
-    </header>
-    <main>
-      <div class="portfolio-container">
-        <div class="project-two project">
-          <a href="https://www.youtube.com/@minimumviablepizza" target="_blank">
-          <img class="project-image" src="./images/youtube_logo.png" 
-          alt="YouTube logo"
-          />
-          </a>
-        </div>
-        <div class="project-three project">
-          <a href="https://zeldapomodoro.netlify.app/" target="_blank">
-          <img class="project-image"
-            src="./images/zelda_pomodoro.png" 
-            alt="Princess Zelda pomodoro"
-          />
-          </a>
-        </div>
-        <div class="project-four project">
-          <a href="https://www.linkedin.com/in/davidworeilly/" target="_blank">
-          <img class="project-image" src="./images/linkedin_thoughts.png" alt="Linkedin thoughts" />
-          </a>
-        </div>
-        <div class="project-five project">
-          <a href="https://mybuddyboo.com.au/" target="_blank">
-          <img class="project-image" src="./images/shopify_logo.png" alt="Shopify logo" />
-          </a>
-        </div>
-        <div class="project-six project">
-          <a href="https://lolfitness.netlify.app/" target="_blank">
-          <img class="project-image" src="./images/lol_fitness.png" alt="League of fitness legends" />
-          </a>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <title>Developer Portfolio - Retro Edition</title>
+  <style>
+    /* Global styles */
+    body {
+      background-color: black;
+      color: #00ff00; /* Neon green text */
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    a {
+      color: #00ff00;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* CRT monitor simulation */
+    .crt {
+      position: relative;
+      overflow: hidden;
+      padding: 20px;
+    }
+    
+    /* Create scan lines using a repeating linear gradient */
+    .crt::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(0, 0, 0, 0.2) 2px,
+        rgba(0, 0, 0, 0.2) 3px
+      );
+      pointer-events: none;
+    }
+
+    /* Typewriter effect styles */
+    .typewriter > .cursor {
+      display: inline-block;
+      background-color: #00ff00;
+      width: 10px;
+      height: 20px;
+      margin-left: 2px;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%, 50% { opacity: 1; }
+      51%, 100% { opacity: 0; }
+    }
+
+    .typewriter-text {
+      display: inline;
+    }
+
+    /* Pixelated images for that 8-bit look */
+    .pixelated {
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #00ff00;
+      margin: 10px 0;
+    }
+    
+    /* Minimal layout for portfolio content */
+    .portfolio {
+      margin-top: 20px;
+    }
+    
+    .portfolio-item {
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="crt">
+    <!-- Header with typewriter effect -->
+    <h1 class="typewriter">
+      <span class="typewriter-text"></span><span class="cursor"></span>
+    </h1>
+    
+    <!-- Introductory paragraph -->
+    <p>Welcome to my developer portfolio. I specialize in frontend development and crafting engaging web experiences with a retro, CRT monitor-inspired aesthetic.</p>
+    
+    <!-- Portfolio items -->
+    <div class="portfolio">
+      <h2>Projects</h2>
+      
+      <div class="portfolio-item">
+        <h3>Project One</h3>
+        <p>This project brings a nostalgic blink of green and black CRT displays to modern browsers. It was built with HTML, CSS, and JavaScript.</p>
+        <img class="pixelated" src="https://via.placeholder.com/300x200.png?text=Project+One" alt="Project One screenshot">
       </div>
+      
+      <div class="portfolio-item">
+        <h3>Project Two</h3>
+        <p>A dynamic project that combines modern coding practices with vintage design aesthetics, creating a unique user experience.</p>
+        <img class="pixelated" src="https://via.placeholder.com/300x200.png?text=Project+Two" alt="Project Two screenshot">
+      </div>
+    </div>
+  </div>
 
-
-
-      </main>
-      <footer>
-      </footer>
-  </body>
+  <script>
+    // JavaScript for typewriter text animation
+    const text = "Welcome to my Developer Portfolio";
+    const speed = 100; // milliseconds between characters
+    let index = 0;
+    const typewriterText = document.querySelector('.typewriter-text');
+    
+    function typeWriter() {
+      if (index < text.length) {
+        typewriterText.textContent += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+    
+    // Start the typewriter animation once the page loads
+    window.addEventListener("load", typeWriter);
+  </script>
+</body>
 </html>
